@@ -5,7 +5,7 @@ using curl/httpie/wget or similar tools.
 
 ![qrenco.de usage](http://igor.chub.in/download/qrenco.de.png)
 
-The service uses [libqrencode](https://github.com/chubin/qrenco.de) to generate QR-codes.
+The service uses [libqrencode](https://github.com/fukuchi/libqrencode) to generate QR-codes.
 
 ## Installation 
 
