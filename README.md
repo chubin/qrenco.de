@@ -5,6 +5,11 @@ using curl/httpie/wget or similar tools.
 
 ![qrenco.de usage](http://igor.chub.in/download/qrenco.de.png)
 
+The service can be used in a browser also.
+Just add `qrenco.de/` before the URL.
+
+![qrenco.de in browser](http://igor.chub.in/download/qrenco.de-browser.png)
+
 The service uses [libqrencode](https://github.com/fukuchi/libqrencode) to generate QR-codes.
 
 ## Installation 
