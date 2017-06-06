@@ -3,7 +3,7 @@
 The service is used to generate QR-codes for strings in a UNIX/Linux console
 using curl/httpie/wget or similar tools. 
 
-![qrenco.de usage](http://igor.chub.in/downloads/qrenco.de.png)
+![qrenco.de usage](http://igor.chub.in/download/qrenco.de.png)
 
 The service uses [libqrencode](https://github.com/chubin/qrenco.de) to generate QR-codes.
 
@@ -11,7 +11,7 @@ The service uses [libqrencode](https://github.com/chubin/qrenco.de) to generate 
 
 ```
 	$ git clone https://github.com/chubin/qrenco.de
-    $ cd qrenco.de
+        $ cd qrenco.de
 	$ virtualenv ve
 	$ ve/bin/pip install -r requirements.txt
 	$ sudo apt-get install libqrenv
