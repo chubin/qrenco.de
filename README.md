@@ -9,6 +9,9 @@ The service uses [libqrencode](https://github.com/chubin/qrenco.de) to generate 
 
 ## Installation 
 
+You don't need to install the service for using it (just try curl qrenco.de),
+but if you want to install it locally, do the following steps:
+
 ```
 	$ git clone https://github.com/chubin/qrenco.de
         $ cd qrenco.de
