@@ -17,13 +17,32 @@ The service uses [libqrencode](https://github.com/fukuchi/libqrencode) to genera
 You don't need to install the service for using it (just try curl qrenco.de),
 but if you want to install it locally, do the following steps:
 
+#### macOS
 ```
-	$ git clone https://github.com/chubin/qrenco.de
-        $ cd qrenco.de
-	$ virtualenv ve
-	$ ve/bin/pip install -r requirements.txt
-	$ sudo apt-get install libqrenv
-	$ ve/bin/python bin/srv.py
+$ brew install qrencode
+```
+or
+```
+$ sudo port install qrencode
+```
+
+#### Debian/Ubuntu
+```
+$ sudo apt-get install qrencode python-virtualenv
+```
+
+#### Fedora >= 22
+```
+$ sudo dnf install qrencode python2-virtualenv
+```
+
+### Common Steps
+```
+$ git clone https://github.com/chubin/qrenco.de
+$ cd qrenco.de
+$ virtualenv ve
+$ ve/bin/pip install -r requirements.txt
+$ ve/bin/python bin/srv.py
 ```
 
 If you want to use a HTTP-frontend for the service,
