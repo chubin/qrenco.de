@@ -17,13 +17,13 @@ PATH_CHEAT_SHEETS_SPOOL = "/home/igor/cheat.sheets/spool/"
 
 def error(text):
     if not text.startswith('Too many queries'):
-        print text
+        print(text)
     logging.error("ERROR "+text)
     raise RuntimeError(text)
 
 def log(text):
     if not text.startswith('Too many queries'):
-        print text
+        print(text)
         logging.info(text)
 
 
