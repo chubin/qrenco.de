@@ -50,7 +50,7 @@ def parse_args(args):
     result = {}
 
     q = ""
-    for key, val in args.items():
+    for key, val in list(args.items()):
         if len(val) == 0:
             q += key
             continue
@@ -62,7 +62,7 @@ def parse_args(args):
     if 'q' in q:
         result['quiet'] = True
 
-    for key, val in args.items():
+    for key, val in list(args.items()):
         if val == 'True':
             val = True
         if val == 'False':
@@ -123,7 +123,7 @@ def answer(topic = None):
 
     if request.method == 'POST':
         data = ''
-        for k, v in request.form.items():
+        for k, v in list(request.form.items()):
             if k == '':
                 if topic is None:
                     topic_name = "UNNAMED"
