@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# vim: set encoding=utf-8
 
 import gevent
 from gevent.pywsgi import WSGIServer
@@ -86,7 +85,7 @@ def send_malformed():
 def log_query(ip, found, topic, user_agent):
     log_entry = "%s %s %s %s" % (ip, found, topic, user_agent)
     with open(FILE_QUERIES_LOG, 'a') as my_file:
-        my_file.write(log_entry.encode('utf-8')+"\n")
+        my_file.write(log_entry+"\n")
 
 @app.route("/", methods=['GET', 'POST'])
 @app.route("/<path:topic>", methods=["GET", "POST"])
